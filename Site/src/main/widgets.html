@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- widgets.html
+	Copyright © Joel Mussman. All rights reserved. -->
+	<html>
+<head>
+	<title>WW Widgets</title>
+	<link rel="stylesheet" type="text/css" href="assets/style/site.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/script/sitebundle.js"></script>
+</head>
+<body>
+<div class="sitebody">
+	<h1>Welcome to The Wonderful Widget Company!</h1>
+    <h2>General</h2>
+    <p>This site is designed as an example of HTML, CSS, TypeScript, and jQuery.
+        The TypeScript is compiled and bundled using WebPack.
+        You may notice that jQuery is left out of the bundle so that it can be loaded and used from HTML script tags, as they won't "import" it.
+        This is purposely not a framework example, e.g. Angular, Vue, or React, to demonstrate a non-single-page-application using these technologies.</p>
+    <h2>Source</h2>
+    <p>The source to the site is at <a href="https://github.com/jmussman/wonderfulwidgets" target="blank">https://github.com/jmussman/wonderfulwidgets</a>, and
+        is released for public and private use under the MIT license.</p>
+    <h2>Local Login</h2>
+    <p>Click on the login link to get to the local login, the purpose of which is to provide a platform for demonstrating a login for password managers, etc.
+        On authentication the local login moves to a logged-in state.
+        It authenticates any user name and password as valid (no user database), with the exception of any username that begins with "badguy".
+        In the logged in state the <i>gravatar</i> dropdown has a "logout" menu item to click to log out.</p>
+    <p>Use this link to the login page: https://wonderfulwidgets.com/login.html, and this <a href="assets/images/application-logo.png" target="blank">application logo</a> to configure
+        identity providers such as Okta to link to wonderfulwidgets.com as a password-managed application.</p>
+    <h2>Gravatar</h2>
+    <p>When authenticated the menu displays the gravatar (<a href="https://gravatar.com" target="blank">https://gravatar.com</a>) for the username.
+        If the username is not registered at gravatar.com a default icon is displayed.
+        The gravatar is selected programmatically in the MenuBuilder module (src/modules/MenuBuilder.ts). </p>
+</div>
+</body>
+</html>

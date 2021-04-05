@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "CommonJS", // "esnext",
+        "target": "es5",
+        "allowJs": true,
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": false,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "lib": ["es2015", "dom"]
+    },
+    "include": [
+        "src"
+    ]
+}

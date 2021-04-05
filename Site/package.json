@@ -1,0 +1,41 @@
+{
+    "//": "package.json Copyright © 2021 Joel Mussman. All rights reserved.",
+    "name": "wonderfulwidgets",
+    "description": "client-side program configuration",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "private": true,
+    "devDependencies": {
+        "@types/chromedriver": "^81.0.0",
+        "@types/crypto-js": "^4.0.1",
+        "@types/jest": "^26.0.22",
+        "@types/jquery": "^3.5.5",
+        "@types/js-cookie": "^2.2.6",
+        "@types/node": "^14.14.37",
+        "@types/puppeteer": "^5.4.3",
+        "@types/selenium-webdriver": "^4.0.12",
+        "chromedriver": "^89.0.0",
+        "copy-webpack-plugin": "^8.1.0",
+        "crypto-js": "^4.0.0",
+        "jest": "^26.6.3",
+        "jest-puppeteer": "^4.4.0",
+        "jquery": "^3.6.0",
+        "js-cookie": "^2.2.1",
+        "puppeteer": "^8.0.0",
+        "selenium-webdriver": "^4.0.0-beta.2",
+        "ts-jest": "^26.5.4",
+        "ts-loader": "^8.0.18",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.3",
+        "webpack": "^5.28.0",
+        "webpack-cli": "^4.5.0",
+        "webpack-dev-server": "^4.0.0-beta.1"
+    },
+    "scripts": {
+        "build": "npx webpack",
+        "start": "npx webpack serve",
+        "test": "echo not implemented",
+        "integrationtest": "echo not implemented",
+        "acceptancetest": "npx ts-node src/acceptance-test/common/runtests.ts"
+    }
+}

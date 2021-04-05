@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- login.html
+	Copyright © Joel Mussman. All rights reserved. -->
+<html>
+<head>
+	<title>WW Login</title>
+	<link rel="stylesheet" type="text/css" href="assets/style/site.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/script/sitebundle.js"></script>
+</head>
+<body>
+<div class="sitebody">
+    <div class="login">
+        <h1>Login</h1>
+        <div class="loginform">
+            <div class="error">
+                Username and password not recognized.
+            </div>
+            <div class="label">
+                Username:
+            </div>
+            <div class="field">
+                <input type="text" name="username" />
+            </div>
+            <div class="break"></div>
+            <div class="label">
+                Password:
+            </div>
+            <div class="field">
+                <input type="password" name="password" />
+            </div>
+            <div class="break"></div>
+            <div class="label">
+            </div>
+            <div class="field">
+                <input type="submit" value="Login" />
+            </div>
+            <div class="break"</div>
+        </div>
+    </div>
+</div>
+<script>
+    $(() => {
+        application.initLoginPage()
+    })
+</script>
+</body>
+</html>

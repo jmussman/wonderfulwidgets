@@ -1,0 +1,192 @@
+/* Site.css
+// Copyright © 2021 Joel Mussman. All rights reserved.
+*/
+
+body, html {
+    margin: 0px;
+    background-color: black;
+    background-image: url(../images/wwbackground.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+a {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+div.login {
+    margin: 0 auto;
+    width: 602px;
+}
+
+div.loginform {
+    width: 600px;
+    border: 1px solid lightgray;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    color: white;
+}
+
+div.loginform .error {
+    padding: 10px;
+    color: red;
+    display: none;
+}
+
+div.loginform .field {
+    border: none;
+    padding: 10px;
+    width: 276px;
+    text-align: left;
+    display: inline-block;
+}
+
+div.loginform .field input[type=submit] {
+    font-size: 18pt;
+    font-variant: small-caps
+}
+
+div.loginform .field input[type=text], input[type=password]
+{
+    width: 240px;
+    border: solid 1px lightgray;
+    padding: 5px;
+    font-size: 18pt;
+    color: #333333;
+}
+
+div.loginform .label {
+    border: none;
+    padding: 10px;
+    width: 276px;
+    text-align: right;
+    font-variant: small-caps;
+    font-weight; bold;
+    display: inline-block;
+}
+
+div.sitebody {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    font-size: 18pt;
+    width: 1024px;
+}
+
+div.sitefooter {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    font-family: arial, helvetica, sans-serif;
+}
+
+div.siteheader {
+    height: 80px;
+    padding: 15px;
+    color: white;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 48pt;
+}
+
+div.siteheader img.logo {
+    margin-left: 10px;
+}
+
+div.sitemenu, div.sitemenu-dropdown {
+    background-color: #555555;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 20pt;
+    font-variant: small-caps;
+    color: white;
+}
+
+div.sitemenu {
+    height: 50px;
+}
+
+div.sitemenu-dropdown {
+    padding: 10px 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+div.sitemenu-dropdown a.logout-item {
+    text-decoration: none;
+}
+
+div.sitemenu a {
+    text-decoration: none;
+    color: white;
+}
+
+div.sitemenu a:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+div.sitemenu .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+div.sitemenu .down {
+    transform: rotate(45deg) translateY(-7px);
+    -webkit-transform: rotate(45deg) translateY(-7px);
+}
+
+div.sitemenu .leftmenu {
+    float: left;
+    margin-left: 15px;
+}
+
+div.sitemenu .rightmenu {
+    float: right;
+    margin-right: 15px;
+}
+
+div.break {
+    clear: both;
+}
+
+div.sitemenu .textitem {
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+div.sitemenu div.gravatar {
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.gravatar img.gravatar {
+    width: 40px;
+    height: 40px;
+    clip-path: circle(20px at center);
+}
+
+div.sitemenu .username {
+    font-variant: none;
+}
