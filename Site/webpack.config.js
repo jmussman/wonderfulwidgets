@@ -2,9 +2,9 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    // mode: 'production',
-    mode: 'development',
-    devtool: 'inline-source-map',   // Comment this line for production.
+    mode: 'production',
+    // mode: 'development',
+    // devtool: 'inline-source-map',   // Comment this line for production.
     entry: {
         main: './src/main/index.ts'
     },
