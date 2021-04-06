@@ -69,7 +69,7 @@ describe('index.html', () => {
         await page.setCookie({ name: 'username', value: 'goodguy' });
         await page.goto(pageUrl);
 
-        let href: string = await (await (await page.$('img.gravatar'))?.getProperty('src'))?.toString() ?? '';
+        let href: string = await (await (await page.$('img.gravatar'))?.getProperty('src'))?.jsonValue() ?? '';
 
         expect(href).toContain('https://www.gravatar.com/avatar/');
     });
