@@ -45,7 +45,7 @@ export function initLoginPage(): void {
                 }
 
                 Cookies.set('username', username);
-                window.location.href = "widgets.html";
+                // window.location.href = "widgets.html";
             }
         }
 

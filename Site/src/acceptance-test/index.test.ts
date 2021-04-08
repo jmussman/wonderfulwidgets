@@ -36,9 +36,10 @@ describe('index.html', () => {
         await (await driver).close();
     })
 
-    // Note the passing of the done parameter to the test function. It may take time to get the application up and running,
-    // and unfortunately jest has a default timeout of 5k milliseconds for async functions. Passing done in tells Jest
-    // that the test may take longer, and wait for us to call "done".
+    // Note the passing of the done parameter to the test function: Selenium is slow and this should increase the timeout
+    // from five seconds to ten. Unfortunately, it seems that the value is ignored by Jest for asynchronous functions and
+    // it still times out after five seconds. If you see this happen and end up here looking at it, run the test again
+    // and it will probably be faster the second time.
 
     test('The header, menu, body, and footer div tags are built and displayed in the correct order', async (done: Function) => {
 
