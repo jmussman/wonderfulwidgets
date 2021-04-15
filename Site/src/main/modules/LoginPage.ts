@@ -45,11 +45,11 @@ export function initLoginPage(): void {
                 }
 
                 Cookies.set('username', username);
-                // window.location.href = "widgets.html";
+                window.location.href = "widgets.html";
             }
         }
 
-        // Don't actually submit the form.
+        // Block event propagation to stop form submission.
 
         event.stopPropagation();
     });
