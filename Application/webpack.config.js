@@ -30,7 +30,7 @@ module.exports = {
     },
     output: {
         filename: 'assets/script/sitebundle.js',
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './build'),
         library: {
             name: 'application',
             type: 'umd'

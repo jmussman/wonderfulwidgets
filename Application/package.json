@@ -36,6 +36,7 @@
         "start": "npx webpack serve",
         "test": "echo not implemented",
         "integrationtest": "echo not implemented",
-        "acceptancetest": "npx ts-node src/acceptance-test/common/runtests.ts"
+        "acceptancetest": "npx ts-node src/acceptance-test/common/runtests.ts",
+        "clean": "rm -rf ./build ./node_modules"
     }
 }
